@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>2.5.4</version>
+            <version>3.0.8</version>
             <type>pom</type>
         </dependency>
     </dependencies>
@@ -41,30 +41,15 @@
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-compiler</artifactId>
-                        <version>3.0.0-01</version>
+                        <version>3.7.0</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-batch</artifactId>
-                        <version>2.5.4-01</version>
+                        <version>3.0.8-01</version>
                     </dependency>
                 </dependencies>
             </plugin>
         </plugins>
     </build>
-
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>bintray</id>
-            <name>Groovy Bintray</name>
-            <url>https://dl.bintray.com/groovy/maven</url>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
 </project>
