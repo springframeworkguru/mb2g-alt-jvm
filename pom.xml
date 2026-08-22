@@ -18,18 +18,26 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
+            <groupId>org.apache.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>3.0.8</version>
+            <version>5.1.0</version>
             <type>pom</type>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>groovy-plugins-release</id>
+            <url>https://groovy.jfrog.io/artifactory/plugins-release</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version><!-- 3.1 is the minimum -->
+                <version>3.15.0</version><!-- 3.1 is the minimum -->
                 <configuration>
                     <compilerId>groovy-eclipse-compiler</compilerId>
                     <compilerArguments>
@@ -41,12 +49,12 @@
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-compiler</artifactId>
-                        <version>3.7.0</version>
+                        <version>3.9.1</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-batch</artifactId>
-                        <version>3.0.8-01</version>
+                        <version>5.0.6-01</version>
                     </dependency>
                 </dependencies>
             </plugin>
